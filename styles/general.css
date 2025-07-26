@@ -1,0 +1,91 @@
+header {
+    background-color: #1abc9c;
+    color: rgb(255, 255, 255);
+    padding: 2rem 0;
+    text-align: center;
+}
+.active {
+    background-color: #1abc9c;
+}
+body {
+    font-family: 'Arial';
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #e7f8f4;
+}
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+.content-box {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+ul, ol {
+    padding-left: 1rem;
+}
+li {
+    margin-bottom: 0.5rem;
+}
+h2 {
+    color: #000000;
+    margin-top: 1;
+    padding-bottom: 0.5rem;
+}
+h3 {
+    color: #000000;
+    margin-top: 1.5rem;
+}
+nav {
+    background-color: #000000;
+    padding: 1rem 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav li {
+    margin: 0 1.5rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+nav a:hover {
+    background-color: #1abc9c;
+    transform: translateY(-2px);
+}
+.warning {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+}
+.danger {
+    background-color: #f8d7da;
+    border-left: 4px solid #dc3545;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+}
+footer {
+    background-color: #1abc9c;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}

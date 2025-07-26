@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор надежных паролей</title>
+    <link rel="stylesheet" href="styles/generator.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" href="image/icon.png">
+</head>
+<body>
+    <header>
+        <h1>Генератор надежных паролей</h1>
+    </header>  
+    <nav>
+        <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="create.html">Создание пароля</a></li>
+            <li><a href="storage.html">Хранение</a></li>
+            <li><a href="generator.html" class="active">Генератор</a></li>
+            <li><a href="check_pass.html">Проверка пароля на утечку</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="info-box">
+            <h3>Как пользоваться генератором?</h3>
+            <ol>
+                <li>Выберите длину пароля (рекомендуется 16+ символов)</li>
+                <li>Отметьте нужные типы символов</li>
+                <li>Нажмите "Сгенерировать пароль"</li>
+                <li>Используйте кнопку "Копировать" для удобства</li>
+            </ol>
+            <p>Для важных аккаунтов используйте максимальную длину и все типы символов.</p>
+        </div>
+        <div class="content-box">
+            <h2>Настройте свой пароль</h2>    
+            <div class="controls">
+                <div class="control-group">
+                    <p>Типы символов:</p>
+                    <label><input type="checkbox" id="uppercase" checked> Заглавные буквы (A-Z)</label>
+                    <label><input type="checkbox" id="lowercase" checked> Строчные буквы (a-z)</label>
+                    <label><input type="checkbox" id="numbers" checked> Цифры (0-9)</label>
+                    <label><input type="checkbox" id="symbols" checked> Спецсимволы (!@#$%^&*()_+-=[]{}|;:,.<>?)</label>
+                </div>
+            </div>
+            <div id="password-result">
+                Нажмите "Сгенерировать" для создания пароля
+            </div>
+            <div class="buttons">
+                <button id="generate">Сгенерировать пароль</button>
+                <button id="copy" class="secondary">Копировать</button>
+            </div>
+        </div>
+        <div class="content-box">
+            <h2>Безопасность вашего пароля</h2>
+            <p>Сгенерированный пароль:</p>
+            <ul>
+                <li>Никогда не отправляется на сервер - все вычисления происходят в вашем браузере</li>
+                <li>Не сохраняется в истории браузера</li>
+                <li>Создается с использованием криптографически безопасного алгоритма</li>
+            </ul>
+            <div class="warning">
+                <p><strong>Важно:</strong> Не забывайте сохранять пароли в надежном месте, например, в менеджере паролей. Вы не сможете восстановить пароль, если его потеряете.</p>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/generator.js"></script>
+    <script>
+        const copyBtn = document.getElementById('copy');
+        copyBtn.addEventListener('click', function() {
+            const passwordText = document.getElementById('password-result').textContent.trim();
+            if (passwordText && 
+                !passwordText.includes('Нажмите "Сгенерировать"') && 
+                !passwordText.includes('Выберите хотя бы один тип символов')) {
+                navigator.clipboard.writeText(passwordText);
+                alert('Скопировано!');
+            }
+        })
+    </script>
+    <footer>
+        <p>© 2025 Парольная безопасность | Образовательный проект</p>
+        <p>Сайт создан в учебных целях</p>
+    </footer>
+</body>
+</html>

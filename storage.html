@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасное хранение паролей</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" href="image/icon.png">
+    <style>
+        .method {
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Безопасное хранение паролей</h1>
+        <p>Как защитить свои пароли от кражи и потери</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="create.html">Создание пароля</a></li>
+            <li><a href="storage.html" class="active">Хранение</a></li>
+            <li><a href="generator.html">Генератор</a></li>
+            <li><a href="check_pass.html">Проверка пароля на утечку</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content-box">
+            <h2>Почему важно правильно хранить пароли?</h2>
+            <p>Создать надежный пароль — только половина дела. Не менее важно хранить его безопасно:</p>
+            <ul>
+                <li><strong>Защита от кражи</strong> — чтобы злоумышленники не получили доступ ко всем вашим аккаунтам</li>
+                <li><strong>Защита от потери</strong> — чтобы не остаться заблокированным в своих же аккаунтах</li>
+                <li><strong>Удобство использования</strong> — чтобы не тратить время на восстановление забытых паролей</li>
+                <li><strong>Синхронизация между устройствами</strong> — доступ к паролям с любого устройства</li>
+            </ul>     
+            <div class="danger">
+                <h3>Статистика утечек паролей</h3>
+                <p>По данным исследований:</p>
+                <ul>
+                    <li>65% пользователей записывают пароли в незащищенных местах</li>
+                    <li>23% пользователей теряли доступ к аккаунтам из-за утери паролей</li>
+                    <li>57% взломов происходят из-за неправильного хранения паролей</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-box">
+            <h2>Способы хранения паролей</h2>
+            <table style="border:none" width="100%">
+                <tr>
+                    <td>
+                        <h3>1. Менеджеры паролей (рекомендуется)</h3>
+                        <p>Специальные программы для безопасного хранения и автоматического заполнения паролей.</p>
+                        <table style="width: 100%; border-collapse: collapse; text-align: left; background-color: #f8f9fa">
+                            <thead>
+                                <tr>
+                                    <th style="background-color: #333; color: white; text-align: center; padding: 12px; border: 1px solid #ddd">
+                                        ЛОГОТИП
+                                    </th>
+                                    <th style="background-color: #333; color: white; text-align: center; padding: 12px; border: 1px solid #ddd">
+                                        НАЗВАНИЕ СЕРВИСА
+                                    </th>
+                                    <th style="background-color: #333; color: white; text-align: center; padding: 12px; border: 1px solid #ddd">
+                                        ПРЕИМУЩЕСТВА
+                                    </th>
+                                    <th style="background-color: #333; color: white; text-align: center; padding: 12px; border: 1px solid #ddd">
+                                        НЕДОСТАТКИ
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">
+                                        <img src="image/Bitwarden.png" alt="Bitwarden" width="70">
+                                    </td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">
+                                        <h4 style="text-align: center;">Bitwarden</h4>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">
+                                        <ul>
+                                            <li>Большой функционал в бесплатной версии</li>
+                                            <li>Открытый код (прозрачность)</li>
+                                            <li>Поддержка всех платформ</li>
+                                        </ul>
+                                    </td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">
+                                        <ul>
+                                            <li>Менее удобный интерфейс</li>
+                                            <li>Скорость работы ниже, чем у конкурентов</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">
+                                        <img src="image/1password.png" alt="1Password" width="100">
+                                    </td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">
+                                        <h4 style="text-align: center">1Password</h4>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">
+                                        <ul>
+                                            <li>Очень удобный интерфейс</li>
+                                            <li>Дополнительные функции безопасности</li>
+                                            <li>Отличная синхронизация</li>
+                                        </ul>
+                                    </td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">
+                                        <ul>
+                                            <li>Необходимость подключения к интернету</li>
+                                            <li>Нет бесплатной версии</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 12px; border: 1px solid #ddd">
+                                        <img src="image/LastPass.png" alt="LastPass" width="120">
+                                    </td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">
+                                        <h4 style="text-align: center">LastPass</h4>
+                                    </td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">
+                                        <ul>
+                                            <li>Бесплатная версия с базовыми функциями</li>
+                                            <li>Удобное расширение для браузеров</li>
+                                        </ul>
+                                    </td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">
+                                        <ul>
+                                            <li>Цена подписки</li>
+                                            <li>Недавние уязвимости в безопасности</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>2. Браузерные менеджеры паролей</h3>
+                        <p>Встроенные функции хранения паролей в Chrome, Firefox, Safari и других браузерах. 
+                        Браузерные менеджеры подходят только для некритичных аккаунтов. 
+                        Для банков, почты и важных сервисов используйте специализированные менеджеры паролей.</p>
+                        <table width="100%">
+                            <tr>
+                                <td width="50%">
+                                    <strong>Преимущества:</strong>
+                                    <ul>
+                                        <li>Удобство использования</li>
+                                        <li>Автоматическое заполнение</li>
+                                        <li>Бесплатно</li>
+                                        <li>Синхронизация между устройствами</li>
+                                    </ul>
+                                </td>
+                                <td width="50%">
+                                    <strong>Недостатки:</strong>
+                                    <ul>
+                                        <li>Менее безопасны, чем специализированные менеджеры</li>
+                                        <li>Ограниченные функции</li>
+                                        <li>Привязка к конкретному браузеру</li>
+                                        <li>Уязвимы к фишинговым атакам</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>3. Физические носители (с осторожностью)</h3>
+                        <p>Запись паролей в блокнот или на бумажные карточки.</p>
+                        <table width="100%">
+                            <tr>
+                                <td width="50%">
+                                    <strong>Преимущества:</strong>
+                                    <ul>
+                                        <li>Не подвержены кибератакам</li>
+                                        <li>Простота использования</li>
+                                        <li>Не требуют технических навыков</li>
+                                    </ul>
+                                </td>
+                                <td width="50%">
+                                    <strong>Недостатки:</strong>
+                                    <ul>
+                                        <li>Риск потери или кражи</li>
+                                        <li>Невозможность быстрого изменения</li>
+                                        <li>Неудобно носить с собой</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <h4>Если вы используете бумажные носители:</h4>
+                        <ul>
+                            <li>Храните в надежном месте (сейф, запертый ящик)</li>
+                            <li>Не записывайте пароли полностью (используйте подсказки)</li>
+                            <li>Не носите с собой все пароли</li>
+                            <li>Регулярно обновляйте записи</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="danger">
+            <h3>Чего НЕ следует делать</h3>
+            <ul>
+                <li><strong>Хранить пароли в файле на компьютере</strong> — даже если он называется "секретно.txt"</li>
+                <li><strong>Отправлять пароли себе по email или в мессенджерах</strong> — эти каналы не защищены</li>
+                <li><strong>Использовать один пароль для всех аккаунтов</strong> — утечка одного пароля откроет доступ ко всем</li>
+                <li><strong>Держать пароли в памяти</strong> — вы обязательно забудете или перепутаете</li>
+            </ul>
+        </div>
+        <div class="content-box">
+            <h2>Дополнительные меры безопасности</h2> 
+            <div class="method">
+                <h3>1. Двухфакторная аутентификация (2FA)</h3>
+                <p>Дополнительный уровень защиты, требующий кроме пароля еще один способ подтверждения.</p>
+                <h4>Типы 2FA:</h4>
+                <ul>
+                    <li><strong>SMS-коды</strong> — удобно, но менее безопасно (риск перехвата)</li>
+                    <li><strong>Приложения-аутентификаторы</strong> (Google Authenticator, Microsoft Authenticator) — более безопасный вариант</li>
+                    <li><strong>Аппаратные ключи</strong> (YubiKey) — максимальная защита</li>
+                    <li><strong>Биометрия</strong> — отпечаток пальца, распознавание лица</li>
+                </ul>
+                <h4>Какие аккаунты нужно защитить 2FA в первую очередь?</h4>
+                <ul>
+                    <li>Электронная почта (доступ к восстановлению других аккаунтов)</li>
+                    <li>Банковские счета и платежные системы</li>
+                    <li>Социальные сети и мессенджеры</li>
+                    <li>Облачные хранилища</li>
+                </ul>
+            </div>
+            <div class="method">
+                <h3>2. Регулярная смена паролей</h3>
+                <p>Как часто нужно менять пароли:</p>
+                <ul>
+                    <li><strong>Критически важные аккаунты</strong> — каждые 3 месяца</li>
+                    <li><strong>Важные аккаунты</strong> — каждые 6 месяцев</li>
+                    <li><strong>Обычные аккаунты</strong> — ежегодно</li>
+                    <li><strong>После любых подозрительных событий</strong> — немедленно</li>
+                </ul>
+            </div>
+            <div class="method">
+                <h3>3. Мониторинг утечек</h3>
+                <p>Сервисы для проверки, не утек ли ваш пароль (email) в сеть:</p>
+                <ul>
+                    <li><a href="check_pass.html"><strong>Через данный ресурс (основан на Have I Been Pwned)</strong></a></li>
+                    <li><a href="https://clck.ru/3MNmHE"><strong>Mozilla Monitor</strong></a> — проверка email на участие в утечках</li>
+                    <li><strong>Google Password Checkup</strong> — встроенная проверка в Chrome</li>
+                </ul>
+                <div class="danger">
+                    <p>Никогда не вводите свои текущие пароли на сторонних сайтах, даже если они кажутся надежными. Используйте только те пароли, которые вы больше не используете.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Парольная безопасность | Образовательный проект</p>
+        <p>Сайт создан в учебных целях</p>
+    </footer>
+</body>
+</html>

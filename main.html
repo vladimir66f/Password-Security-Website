@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасность паролей</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" href="image/icon.png">
+    <style>
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .important {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            flex: 1 1 300px;
+            padding: 2rem;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(5px);
+        }
+        .card a {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Безопасность паролей</h1>
+        <p>Полное руководство по созданию и защите ваших паролей</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="main.html" class="active">Главная</a></li>
+            <li><a href="create.html">Создание пароля</a></li>
+            <li><a href="storage.html">Хранение</a></li>
+            <li><a href="generator.html">Генератор</a></li>
+            <li><a href="check_pass.html">Проверка пароля на утечку</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="intro">
+            <h2><a href="#method" style="text-decoration:none">Защитите свои аккаунты</a></h2>
+            <p>Узнайте, как создавать, хранить и управлять надежными паролями для максимальной безопасности</p>
+        </div>
+        <div class="important">
+            <h2>Почему это важно?</h2>
+            <p>Слабые пароли — основная причина взломов аккаунтов. По статистике:</p>
+            <ul>
+                <li>81% взломов происходит из-за слабых или украденных паролей</li>
+                <li>59% людей используют один пароль для нескольких аккаунтов</li>
+                <li>Среднестатистический человек имеет более 100 онлайн-аккаунтов</li>
+            </ul>
+            <p>Данный ресурс поможет вам разобраться в основах парольной безопасности.</p>
+        </div>
+        <div class="card-container" id="method">
+            <div class="card">
+                <h3>Создание паролей</h3>
+                <p>Методы создания надежных и запоминающихся паролей.</p>
+                <a href="create.html">Перейти</a>
+            </div>
+            <div class="card">
+                <h3>Хранение паролей</h3>
+                <p>Безопасные способы хранения и управления вашими паролями.</p>
+                <a href="storage.html">Перейти</a>
+            </div>
+            <div class="card">
+                <h3>Генератор паролей</h3>
+                <p>Создавайте случайные надежные пароли за секунды.</p>
+                <a href="generator.html">Использовать</a>
+            </div>
+            <div class="card">
+                <h3>Проверка пароля на утечку</h3>
+                <p>Проверьте, не был ли ваш пароль раскрыт в результате утечек информации</p>
+                <a href="check_pass.html">Использовать</a>
+            </div>
+        </div>
+        <div class="important">
+            <h2>Основы парольной безопасности</h2>
+            <p>Пароли — это ключи к вашей цифровой жизни. Они защищают:</p>
+            <ul>
+                <li>Личную переписку и фотографии</li>
+                <li>Банковские счета и платежные системы</li>
+                <li>Конфиденциальные рабочие документы</li>
+                <li>Умные домашние устройства</li>
+            </ul>
+            <h3>Что делает пароль слабым?</h3>
+            <ul>
+                <li>Короткая длина (менее 12 символов)</li>
+                <li>Использование личной информации</li>
+                <li>Простые последовательности (123456, qwerty)</li>
+                <li>Одинаковые пароли для всех аккаунтов</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Безопасность паролей | Образовательный проект</p>
+        <p>Сайт создан в учебных целях</p>
+    </footer>
+</body>
+</html>

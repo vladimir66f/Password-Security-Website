@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как создавать надежный пароль</title>
+    <link rel="stylesheet" href="styles/create.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" href="image/icon.png">
+</head>
+<body>
+    <header>
+        <h1>Как создавать надежный пароль</h1>
+        <p>Проверенные методы создания запоминающихся и безопасных паролей</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="create.html" class="active">Создание пароля</a></li>
+            <li><a href="storage.html">Хранение</a></li>
+            <li><a href="generator.html">Генератор</a></li>
+            <li><a href="check_pass.html">Проверка пароля на утечку</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content-box">
+            <h2>Основные принципы создания паролей</h2>
+            <p>Хороший пароль должен сочетать в себе:</p>
+            <ul>
+                <li><strong>Сложность</strong> - защиту от автоматического подбора</li>
+                <li><strong>Уникальность</strong> - отличие от других ваших паролей</li>
+                <li><strong>Запоминаемость</strong> - возможность воспроизвести без записи</li>
+                <li><strong>Долговечность</strong> - устойчивость ко взлому с течением времени</li>
+            </ul>
+            <div class="warning">
+                <h3>Чего следует избегать</h3>
+                <ul>
+                    <li>Личная информация (имена, даты, номера телефонов)</li>
+                    <li>Словарные слова и простые последовательности</li>
+                    <li>Повторение символов (1111, aaaa)</li>
+                    <li>Использование одного пароля для всех аккаунтов</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-box">
+            <h2>Проверенные методы создания паролей</h2>
+            <div class="method">
+                <h3>1. Метод фразы</h3>
+                <p>Возьмите фразу или цитату, известную только вам, и используйте первые буквы каждого слова:</p>
+                <p><strong>Пример:</strong> "Надеюсь что сайт будет всем полезен)!" → <span class="example good-example">Нчсбвп)!</span></p>
+                <p><strong>Преимущества:</strong></p>
+                <ul>
+                    <li>Длинные и сложные пароли</li>
+                    <li>Легко запомнить</li>
+                    <li>Можно создать уникальный пароль для каждого сервиса</li>
+                </ul>
+            </div>
+            <div class="method">
+                <h3>2. Метод замены символов</h3>
+                <p>Возьмите базовое слово и сделайте замены букв на похожие символы или цифры:</p>
+                <p><strong>Пример:</strong> "кофеварка" → <span class="example good-example">k0f3v@rk@</span></p>
+                <p><strong>Схема замен:</strong></p>
+                <ul>
+                    <li>а → @, 4</li>
+                    <li>е → 3</li>
+                    <li>и → 1, !</li>
+                    <li>о → 0</li>
+                    <li>с → $</li>
+                </ul>
+                <div class="tip">
+                    <p>Используйте не только простые замены вроде a→@, e→3 — они хорошо известны взломщикам. Комбинируйте несколько методов.</p>
+                </div>
+            </div>
+            <div class="method">
+                <h3>3. Метод комбинации слов</h3>
+                <p>Соедините 3-4 случайных слова с цифрами и символами:</p>
+                <p><strong>Пример:</strong> <span class="example good-example">apple42handy#window</span></p>
+                <p><strong>Советы:</strong></p>
+                <ul>
+                    <li>Выбирайте слова, не связанные между собой</li>
+                    <li>Добавляйте цифры и символы между словами</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-box">
+            <h2>Примеры паролей разной сложности</h2>
+            <table style="width: 100%; border-collapse: collapse; margin: 1rem 0">
+                <tr style="background-color: #f8f9fa;">
+                    <th class="tab">Пароль</th>
+                    <th class="tab">Надежность</th>
+                    <th class="tab">Время взлома*</th>
+                </tr>
+                <tr>
+                    <td class="tab"><span class="example bad-example">qwerty123</span></td>
+                    <td class="tab">Очень слабая</td>
+                    <td class="tab">Менее секунды</td>
+                </tr>
+                <tr style="background-color: #f8f9fa;">
+                    <td class="tab"><span class="example bad-example">IvanPetrov1985</span></td>
+                    <td class="tab">Слабая</td>
+                    <td class="tab">Несколько часов</td>
+                </tr>
+                <tr>
+                    <td class="tab"><span class="example so-so-example">Jg$7kLp2</span></td>
+                    <td class="tab">Средняя</td>
+                    <td class="tab">Несколько дней</td>
+                </tr>
+                <tr style="background-color: #f8f9fa;">
+                    <td class="tab"><span class="example good-example">Мпуч1998гжуЛ42!</span></td>
+                    <td class="tab">Высокая</td>
+                    <td class="tab">Тысячи лет</td>
+                </tr>
+                <tr>
+                    <td class="tab"><span class="example good-example">apple42handy#window</span></td>
+                    <td class="tab">Очень высокая</td>
+                    <td class="tab">Миллионы лет</td>
+                </tr>
+            </table>
+            <p style="font-size: 0.8rem; color: #6c757d;">*Примерное время для взлома методом перебора на современном компьютере</p>
+        </div> 
+    </div>
+    <footer>
+        <p>© 2025 Парольная безопасность | Образовательный проект</p>
+        <p>Сайт создан в учебных целях</p>
+    </footer>
+</body>
+</html>

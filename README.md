@@ -1,2 +1,2 @@
 # Password-Security-Website
-Student project. A website about password security with password generation and leak checking.
+Student project. A website about password security with password generation and leak checking. The password generation script requests the password length and character types (letters, numbers, special characters), generates a source string from the selected characters, then generates a cryptographic password by selecting random characters from this string using window.crypto.getRandomValues(). The script for checking the password for leaks checks the password through the Have I Been Pwned service.
